@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    height: 90vh;
+    gap: 20px;
+    margin-bottom: 100px;
 }
 .newcollections h1{
     color: #171717;
