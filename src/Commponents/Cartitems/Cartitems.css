@@ -1,0 +1,62 @@
+.cartitems{
+    margin: 100px 170px;
+}
+.cartitems hr{
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+.cartitems-format-main{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cartitems-format{
+    font-size: 17px;
+    font-weight: 500;
+}
+.carticon-product-icon{
+    height: 62px;
+}
+.carticon-remove-icon{
+    width: 15px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+.cartitems-quantity{
+    width: 64px;
+    height: 50px;
+    border: 2px solid #ebebeb;
+    background: #fff;
+}
+.cartitems-down{
+    display: flex;
+    margin: 100px 0px;
+}
+.cartitems-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+.cartitems-total-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.cartitems-total button{
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
