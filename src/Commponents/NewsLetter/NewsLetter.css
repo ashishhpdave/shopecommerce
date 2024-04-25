@@ -1,3 +1,6 @@
+ body{
+    background: #4545452c;
+ }
 .newsletter{
     width: 65%;
     height: 40vh;
@@ -43,12 +46,54 @@
     font-family: Poppins;
     font-size: 16px;
 }
-.newsletter div button{
+
+.newsletter button {
+    display: inline-block;
     width: 210px;
     height: 70px;
     border-radius: 80px;
-    background: black;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+   }
+   
+   .newsletter button::before,
+   .newsletter button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   .newsletter button::before {
+    left: -10px;
+    background: #fde1ff;
+   }
+   
+   .newsletter button::after {
+    right: -10px;
+    background: #59189a80;
+   }
+   
+   .newsletter button:hover::before,
+   .newsletter button:hover::after {
+    width: 58%;
+   }
+   
+   .newsletter button:hover span {
+    color: #e0aaff;
+    transition: 0.3s;
+   }
+   
+   .newsletter button span {
+    color: #03045e;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+   }
